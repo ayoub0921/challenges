@@ -35,7 +35,7 @@ const Accordion = () => {
     <div>
         {data.map((item,index)=>(
           <div key={index}>
-            <h3>{item.title}<FaAngleDown  onClick={() => handleToogleAccordion(index)}/></h3>
+            <h3>{item.title}<FaAngleDown style={{transform: openIndex === index ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s ease"}}  onClick={() => handleToogleAccordion(index)}/></h3>
             {openIndex === index && <p>{item.content}</p>}
           </div>
         ))}

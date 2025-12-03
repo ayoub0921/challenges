@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Card from "./components/Card"
 import Accordion from "./components/Accordion"
+import ColorInput from "./components/ColorInput"
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         {toogle && <p>This is a toogle button example</p>}
       </div> */}
       <Accordion/>
+      <ColorInput/>
     </div>
   )
 }
