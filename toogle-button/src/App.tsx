@@ -1,7 +1,7 @@
 import { useState } from "react"
-import Card from "./components/Card"
 import Accordion from "./components/Accordion"
 import ColorInput from "./components/ColorInput"
+import DisableButton from "./components/DisableButton"
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
       </div> */}
       <Accordion/>
       <ColorInput/>
+      <DisableButton/>
     </div>
   )
 }
