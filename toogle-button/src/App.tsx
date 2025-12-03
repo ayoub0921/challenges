@@ -1,9 +1,10 @@
 import { useState } from "react"
+import Card from "./components/Card"
 
 
 function App() {
 
-  const  [toogle,setToogle] = useState(false)
+  const [toogle, setToogle] = useState(false)
 
 
 
@@ -11,18 +12,21 @@ function App() {
 
     setToogle(prev => !prev)
   }
-  
+
 
   return (
-    <div className={`wrapper ${toogle ? "wrapper-show" : "wrapper-hide"}`}>
-      <h1>Toogle button</h1>
+    <div>
+      <Card/>
+      <div className={`wrapper ${toogle ? "wrapper-show" : "wrapper-hide"}`}>
+        <h1>Toogle button</h1>
 
-      <button className={`btn ${toogle ? "btn-hide" : "btn-show"}`} onClick={handleToogleButton}>
-        {toogle ? "hide" : "show"}
-      </button>
+        <button className={`btn ${toogle ? "btn-hide" : "btn-show"}`} onClick={handleToogleButton}>
+          {toogle ? "hide" : "show"}
+        </button>
 
 
-      {toogle && <p>This is a toogle button example</p>}
+        {toogle && <p>This is a toogle button example</p>}
+      </div>
     </div>
   )
 }
