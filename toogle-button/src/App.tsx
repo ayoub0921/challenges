@@ -14,10 +14,10 @@ function App() {
   
 
   return (
-    <div style={{backgroundColor: toogle ? "red" : "gray"}}>
+    <div className={`wrapper ${toogle ? "wrapper-show" : "wrapper-hide"}`}>
       <h1>Toogle button</h1>
 
-      <button style={{ backgroundColor: toogle ? "red" : "green" }} onClick={handleToogleButton}>
+      <button className={`btn ${toogle ? "btn-hide" : "btn-show"}`} onClick={handleToogleButton}>
         {toogle ? "hide" : "show"}
       </button>
 
