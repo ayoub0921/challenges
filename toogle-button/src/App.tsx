@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Card from "./components/Card"
+import Accordion from "./components/Accordion"
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <div>
-      <Card/>
+      {/* <Card/>
       <div className={`wrapper ${toogle ? "wrapper-show" : "wrapper-hide"}`}>
         <h1>Toogle button</h1>
 
@@ -26,7 +27,8 @@ function App() {
 
 
         {toogle && <p>This is a toogle button example</p>}
-      </div>
+      </div> */}
+      <Accordion/>
     </div>
   )
 }
